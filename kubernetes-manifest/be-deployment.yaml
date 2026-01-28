@@ -44,3 +44,8 @@ spec:
                 secretKeyRef:
                   name: mysql-secret
                   key: DB_PASSWORD
+            - name: DB_DIALECT
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: DB_DIALECT 
